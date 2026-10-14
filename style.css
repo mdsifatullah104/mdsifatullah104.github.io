@@ -499,19 +499,8 @@ ul {
     );
 }
 
-.hero-grid {
-  position: relative;
-  z-index: 3;
-
-  display: grid;
-  grid-template-columns: 1.08fr 0.92fr;
-
-  gap: 80px;
-  align-items: center;
-}
-.hero-content {
-  padding-left: 48px;
-}
+.hero-grid { position: relative; z-index: 3; display grid; grid-template-columns: 1.05fr, 0.95fr; gap: 56px; align items center
+.hero-content { padding-left: 28px; max width: 700px;}
 .eyebrow {
   display: inline-flex;
   align-items: center;
