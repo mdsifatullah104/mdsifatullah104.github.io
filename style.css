@@ -2491,7 +2491,70 @@ ul {
     flex-direction: column;
     text-align: center;
   }
+.hero {
+  overflow-x: hidden;
+}
 
+.hero-grid {
+  grid-template-columns: 1fr;
+  gap: 32px;
+  text-align: center;
+}
+
+.hero-content {
+  padding-left: 0;
+  max-width: 100%;
+  order: 2;
+}
+
+.hero-visual {
+  order: 1;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-frame {
+  width: min(320px, 88vw);
+  margin-inline: auto;
+}
+
+.hero-actions {
+  display: grid;
+  gap: 14px;
+}
+
+.hero-socials {
+  justify-content: center;
+}
+
+.hero-stats {
+  position: static;
+  width: 100%;
+  margin-top: 28px;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.stat-card {
+  width: 100%;
+  min-width: 0;
+}
+
+.hero-title {
+  font-size: clamp(3rem, 15vw, 4.6rem);
+  line-height: 0.95;
+}
+
+.hero-subtitle,
+.hero-description {
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+body {
+  overflow-x: hidden;
+}
 }
 
 
