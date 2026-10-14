@@ -2171,7 +2171,34 @@ ul {
 /* =========================
    RESPONSIVE — TABLET
 ========================= */
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
 
+.hero-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.82rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+}
+
+.hero-meta i {
+  color: var(--gold-300);
+}
+
+
+ {
 @media (max-width: 1080px) {
 
   .main-nav {
