@@ -590,7 +590,7 @@ document.addEventListener("keydown", (event) => {
 
 document.querySelectorAll("img").forEach((image) => {
 
-  image.addEventListener("error", () => {
+  function showPlaceholder() {
 
     image.style.opacity = "0";
 
@@ -652,7 +652,14 @@ document.querySelectorAll("img").forEach((image) => {
 
     }
 
-  });
+  }
+
+  image.addEventListener("error", showPlaceholder);
+
+  // Image may have already failed before this script ran
+  if (image.complete && image.naturalWidth === 0 && image.getAttribute("src")) {
+    showPlaceholder();
+  }
 
 });
 
